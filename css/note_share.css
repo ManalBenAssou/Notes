@@ -1,0 +1,202 @@
+/* Reset de quelques styles par défaut pour la compatibilité entre les navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général pour le corps du document */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    margin: 0;
+}
+
+/* Style de la section principale */
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style de la ligne de titre */
+.title-line {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin-right: 600px;
+    color: #ffffff;
+}
+
+/* Style des sections Pinned et Others */
+h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.pinned-notes, .other-notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Pour espacer les notes sur la ligne */
+}
+
+.archived-notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Pour espacer les notes sur la ligne */
+}
+
+.note-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Style des notes épinglées et autres */
+.note-row {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 150px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.note-title {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+/*.note-content {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Ajout de l'ellipse pour le texte qui dépasse */
+
+
+
+
+.move-note {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.move-note .btn {
+    /*background-color: transparent;
+    border: none;
+    color: #007FF6;*/
+    font-size: x-small;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.note td {
+    padding: 10px;
+}
+
+ul {
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.add-note-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.add-note-icons a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 24px;
+    color: yellow;
+    text-decoration: none;
+}
+
+.add-note-icons a:hover {
+    color: #007FF6;
+}
+
+
+/* Style du sidebar offcanvas */
+.offcanvas {
+    width: 250px;
+    background-color: #181818;
+    color: white;
+}
+
+/* Style du header du sidebar */
+.offcanvas-header {
+    background-color: #181818;
+    color: #ffffff;
+    border-bottom: 1px solid #181818;
+}
+
+
+/* Style du titre du sidebar */
+.offcanvas-title {
+    font-size: 24px;
+}
+
+/* Style du corps du sidebar */
+.offcanvas-body {
+    padding: 10px;
+}
+
+/* Style des liens du sidebar */
+.offcanvas-body a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    display: block;
+}
+
+
+/* Effet de survol pour les liens du sidebar */
+.offcanvas-body a:hover {
+    color: #007FF6; /* Couleur différente au survol */
+}
+
+/* Style du bouton de fermeture du sidebar */
+.offcanvas-body .btn-close {
+    color: white;
+    transition: color 0.3s ease; /* Transition de la couleur sur 0.3 seconde */
+}
+
+/* Effet de survol pour le bouton de fermeture du sidebar */
+.offcanvas-body .btn-close:hover {
+    color: #007FF6; /* Couleur différente au survol */
+}
+
+
+/* Media query pour les appareils mobiles */
+@media (max-width: 600px) {
+    .note-row {
+        width: 100%; /* Notes à largeur totale sur les appareils mobiles */
+    }
+}
+
+

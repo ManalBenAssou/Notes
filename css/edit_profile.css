@@ -1,0 +1,88 @@
+/* Global styles */
+* {
+    font-family: verdana, sans-serif;
+    font-size: 14pt;
+}
+
+body, html {
+    margin: 0;
+    background-color: #0f0f0f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styles */
+.container {
+    padding: 20px;
+    background: #0f0f0f;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+/* Title styles */
+.title {
+    background: #0f0f0f;
+    color: rgb(243, 243, 235);
+    font-family: helvetica;
+    font-size: 15pt;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Form and input styles */
+form {
+    color: white;
+    background-color: #0f0f0f;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 140%;
+    border-radius: 5px;
+    border-color: #0f0f0f;
+    background-color: #0f0f0f;
+    color: white;
+    padding-left: 30px; /* To make space for the icon */
+}
+
+/* Icon styles */
+.icon-cell {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+}
+
+/* Button styles */
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    width: 140%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+/* Error message styles */
+.errors {
+    color: #ff0000;
+    margin-top: 20px;
+    width: 140%;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    .input-wrapper input, input[type="submit"], .errors {
+        width: 100%; /* Adjust width for mobile devices */
+    }
+}

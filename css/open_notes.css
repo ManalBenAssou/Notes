@@ -1,0 +1,59 @@
+html{
+    background-color: #181818;
+}
+
+.menu a{
+    display: inline;
+    padding: 4px 6px;
+    color: rgb(254, 252, 252);
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.fa-chevron-left {
+    margin-right: 400px;
+}
+
+.btn-primary {
+    background-color: #181818;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #181818;
+
+}
+
+.btn-wrapper {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999; 
+}
+.icon-bar .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.icon-bar .menu a,
+.icon-bar .menu form {
+    margin-right: 10px; 
+}
+
+.buttons {
+    background-color: #181818; 
+    border:none; 
+    color: white;
+}
+
+.modal-content {
+    background-color: #3a3939;
+    color: white;
+}
+.btn-primary {
+    background-color: red;
+}
+.btn-primary:hover {
+    background-color: darkred;
+}

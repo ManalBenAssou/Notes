@@ -1,0 +1,115 @@
+/* Style adjustments for the modal */
+.modal-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #202020;
+  }
+  
+  
+  
+  .modal-container {
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; /* Adjust as necessary */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-header {
+    position: relative;
+    text-align: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .modal-icon img {
+    width: 50px; /* Adjust as necessary */
+    margin: 0 auto;
+  }
+  
+  .modal-title {
+    color: crimson;
+    margin-top: 10px;
+  }
+  
+  .modal-body {
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .modal-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .delete {
+    background-color: #d9534f;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Additional global style adjustments */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  .modal-footer .btn {
+    font-weight: bold; /* Makes the text bold */
+    padding: 10px 20px; /* Larger padding for a bigger button */
+    margin: 0 5px; /* Spacing between buttons */
+  }
+  .modal-footer .btn-secondary{
+    background-color:grey;
+    border-color:grey;
+  }
+  span{
+    font-weight: bolder;
+
+  }
+  /* Custom styles for the delete button */
+  .modal-footer .btn-danger {
+    background-color: crimson; /* Dark red color */
+    border-color: crimson; /* Matching border color */
+  }
+  
+  /* Hover effect for buttons */
+  .modal-footer .btn:hover {
+    opacity: 0.9;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+  

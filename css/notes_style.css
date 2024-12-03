@@ -1,0 +1,203 @@
+/* Reset des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux du corps du document */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+    margin: 0;
+}
+
+/* Conteneur principal */
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ligne de titre */
+.title-line {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Bouton */
+.btn {
+    margin-right: 500px; /* Ajustement de la marge pour éviter le chevauchement */
+    color: #ffffff;
+}
+
+/* Notes */
+.note-link {
+    text-decoration: none;
+    color: inherit; /* Couleur de texte héritée pour les liens dans les notes */
+}
+
+.note-row {
+    background-color: #181818;
+    color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Augmentation de l'espacement entre les notes */
+}
+
+.note-title {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.note-content {
+    padding: 10px;
+    height: 100px; /* Réduction de la hauteur pour limiter l'affichage du contenu */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ajoute une ellipse (...) pour indiquer que le texte est coupé */
+    margin-bottom: 30px;
+
+}
+.note-label {
+    display: inline-block;
+    padding: .25em .6em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    border-color: #181818;
+    background-color: #44494e; /* Couleur grise par défaut, à personnaliser */
+    margin-right: .5em; /* Espace entre les étiquettes */
+}
+
+.label {
+    display: inline;
+    padding: 2px;
+    font-size:medium;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    background-color: grey;
+}
+.move-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.move-note .btn {
+    font-size: 14px; /* Réduction de la taille de la police pour les boutons de déplacement */
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.add-note-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.add-note-icons a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 24px;
+    color: yellow;
+    text-decoration: none;
+}
+
+.add-note-icons a:hover {
+    color: #007FF6;
+}
+
+.labels {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sidebar Offcanvas */
+.offcanvas {
+    width: 250px;
+    background-color: #181818;
+    color: white;
+}
+
+.offcanvas-header {
+    background-color: #181818;
+    color: #ffffff;
+    border-bottom: 1px solid #181818;
+}
+
+.offcanvas-title {
+    font-size: 24px;
+}
+
+.offcanvas-body {
+    padding: 10px;
+}
+
+.offcanvas-body a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    display: block;
+}
+
+.offcanvas-body a:hover {
+    color: #007FF6;
+}
+
+.offcanvas-body .btn-close {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.offcanvas-body .btn-close:hover {
+    color: #007FF6;
+}
+
+/* Styles généraux */
+
+/* Pour les appareils mobiles */
+@media (max-width: 768px) {
+    .note-row {
+        margin-bottom: 10px; /* Réduction de l'espacement entre les notes sur les appareils mobiles */
+    }
+    
+    .move-note .btn {
+        font-size: 12px; /* Réduction supplémentaire de la taille de la police pour les boutons de déplacement sur les appareils mobiles */
+    }
+}
+
+/* Pour les appareils plus petits */
+@media (max-width: 576px) {
+    .main {
+        padding: 10px; /* Réduction de l'espacement autour du conteneur principal sur les appareils plus petits */
+    }
+
+    .note-content {
+        height: 80px; /* Réduction supplémentaire de la hauteur du contenu sur les appareils plus petits */
+    }
+}
+
+/* Pour les appareils très petits */
+@media (max-width: 400px) {
+    .add-note-icons {
+        bottom: 10px; /* Réduction de l'espacement en bas de la page pour les appareils très petits */
+        right: 10px; /* Réduction de l'espacement sur le côté droit de la page pour les appareils très petits */
+    }
+}

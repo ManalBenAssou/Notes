@@ -1,0 +1,75 @@
+* {
+    font-family: verdana, sans-serif;
+    font-size: 14pt;
+}
+
+.greet {
+    text-align: left;
+    color: rgb(243, 243, 235);
+    font-family: helvetica;
+    font-size: 15pt;
+    padding: 8px;
+}
+
+.greet span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    border-radius: 5px;
+}
+
+html {
+    margin: 0;
+    background-color: #191717;
+}
+
+.main {
+   
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    text-align: left;
+}
+
+.menu a {
+    display: inline;
+    padding: 4px 6px;
+    color: white;
+    margin-right: 8px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(86, 183, 228);
+}
+
+.white-icon {
+    color: white;
+}
+
+.title-line {
+    text-align: left;
+    color: rgb(243, 243, 235);
+    font-family: helvetica;
+    font-size: 15pt;
+    margin-bottom: 100px;
+}
+
+.title-line a {
+    text-align: left;
+    display: inline;
+    color: white;
+    text-decoration: none;
+    margin-right: 500px; /* Ajustement de la marge pour un espacement plus modéré */
+}
+

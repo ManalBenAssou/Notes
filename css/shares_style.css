@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    margin: 0;
+}
+
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-icon {
+    margin-bottom: 30px;
+
+}
+
+.back-icon a {
+    padding: 4px 6px;
+    color: white;
+    margin-right: 8px;
+    text-decoration: none;
+
+}
+
+.title {
+    margin-bottom: 30px;
+    font-size: larger;
+}
+
+.users-list, .permission-list {
+    display: inline-block;
+}
+
+#permission-options, #user-options {
+    font-size: large;
+    padding: 5px;
+    width: 150px;
+    background-color: #181818;
+    color: white;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+
+}
+
+.toggle-btn,.delete-btn, .add-btn {
+    color: #ffffff;
+    background-color: #016afb;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.shared-users-container {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #181818;
+    margin-bottom: 10px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shared-users-buttons {
+    display: flex;
+}

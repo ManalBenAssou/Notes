@@ -1,0 +1,135 @@
+* {
+    font-family: verdana, sans-serif;
+    font-size: 14pt;
+}
+
+.title {
+    text-align: center;
+    background: #0f0f0f;
+    color: rgb(243, 243, 235);
+    font-family: helvetica;
+    font-size: 15pt;
+    padding: 8px;
+
+}
+
+body {
+    /*font-family: 'Arial', sans-serif;*/
+    background-color: #0f0f0f;
+    border: 1px solid #0b0b0b;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+html {
+    margin: 0;
+    background-color: #0f0f0f;
+}
+
+.main {
+    text-align: center;
+    padding: 20px;
+    background: #0f0f0f;
+    border: none;
+}
+
+form {
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    background-color: #0f0f0f;
+    border-bottom: #0f0f0f;
+    max-width: 400px;
+    margin: 0 auto;
+    border: none !important;
+}
+
+.menu {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu a {
+    display: inline;
+    padding: 4px 6px;
+    background: #0f0f0f;
+    color: rgb(34, 37, 241);
+    margin-right: 8px;
+    text-decoration: none;
+}
+.menu a:hover {
+    color   :rgb(86, 183, 228);
+}
+textarea {
+    width: 140%;
+}
+
+.errors {
+    color: red;
+     width: 140%;
+}
+
+.success {
+    color: green;
+}
+
+form.link {
+    display: inline;
+}
+
+
+
+.white-icon {
+    color: white;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"]
+{
+    width: 140%; /* La largeur est définie à 100% pour occuper toute la largeur du formulaire */
+    /*box-sizing: border-box; /* Garantit que la largeur inclut le padding et la bordure sans déborder */
+    margin-bottom: 10px; /* Ajoute un espace en bas entre les champs et le bouton */
+    border-radius: 5px;
+    border-color: #0f0f0f;
+    box-shadow:#0f0f0f;
+    background-color: #0f0f0f;
+}
+
+
+form input[type="submit"] {
+    background-color: blue;
+    color: white;
+    width: 140%;
+    border-radius: 5px;
+    /*box-sizing: border-box; /* Garantit que la largeur inclut le padding et la bordure sans déborder */
+    margin-bottom: 10px; /* Ajoute un espace en bas entre les champs et le bouton */
+    border-radius: 5px;
+}
+
+.login:hover {
+    color   :rgb(86, 183, 228);
+
+}
+
+input[type="button"] {
+    background-color: #0a0a0a;
+    color: red;
+    width: 140%;
+    /*border-radius: 5px;*/
+    /*box-sizing: border-box; Garantit que la largeur inclut le padding et la bordure sans déborder */
+    margin-bottom: 10px; /* Ajoute un espace en bas entre les champs et le bouton */
+    border: 2px solid red;
+    border-radius: 5px; 
+    
+}
+
+.errors {
+    color: #ff0000;
+    margin-top: 20px;
+    width: 140%;
+}

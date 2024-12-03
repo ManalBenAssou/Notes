@@ -1,0 +1,32 @@
+html{
+    background-color: #181818;
+}
+
+.menu a{
+    display: inline;
+    padding: 4px 6px;
+    color: rgb(254, 252, 252);
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+.fa-chevron-left {
+    margin-right: 400px;
+}
+
+.btn-primary {
+    background-color: #181818;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #181818;
+
+}
+
+.btn-wrapper {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999; 
+}

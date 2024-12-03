@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    margin: 0;
+}
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+    position: relative;
+}
+.btn-wrapper {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999; 
+}
+.btn {
+    color: #ffffff;
+    background-color: #181818;
+    border: none;
+    font-size: 20px;
+}
+.header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999; 
+}
+.header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.input-fields {
+    display: grid;
+    margin-top: 60px; 
+}
+.input-fields .items {
+    display:grid;
+}
+.input-fields .item-input {
+    background: none!important;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font: inherit;
+    color: #ffffff;
+    text-decoration:none;
+    width: calc(100% - 20px);
+}
+form input[type="text"] {
+    background: none!important;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    font: inherit;
+    color: #ffffff;
+    text-decoration:none;
+    
+}
+
+.errors {
+    color: red;
+}
+
+.item-container, .new-item-container {
+    display: flex;
+    align-items: center; /* Aligner les éléments sur la ligne */
+}
+
+.input-container, .new-item-input {
+    flex: 1; /* Laisser l'input prendre autant d'espace disponible */
+    margin-right: 10px; /* Espacement entre l'input et le bouton */
+}
+
+.delete-form {
+    margin-left: auto; /* Déplacer le bouton vers la droite */
+}
+
+
+.modal-content {
+    background-color: #3a3939;
+    color: white;
+}
+.leave-btn {
+    background-color: red;
+}
+.leave-btn:hover {
+    background-color: darkred;
+}
+
+/* Media query pour les appareils mobiles */
+@media (max-width: 600px) {
+    .btn-wrapper {
+        position: static;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .btn {
+        margin-top: 10px;
+    }
+    .header {
+        position: static;
+        text-align: center;
+    }
+    .header a {
+        font-size: 20px; 
+    }
+    .main {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .input-fields {
+        margin-top: 20px;
+    }
+    .item-input,
+    .new-item-input {
+        width: calc(100% - 20px);
+    }
+    textarea {
+        padding-bottom: 150px;
+    }
+    .new-item-label {
+        margin-top: 20px;
+    }
+}
